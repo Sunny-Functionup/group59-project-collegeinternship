@@ -5,10 +5,10 @@ const collegeController = require('../controllers/collegeController');
 const internsController = require('../controllers/internsController');
 
 //Collage creation
-router.post('/functionUp/Colleges', collegeController.createCollege);
+router.post('/functionUp/Colleges', collegeController.collegeCreate);
 //Register for internship
-router.post('/functionUp/interns', internsController.createInterns);
+router.post('/functionUp/interns', internsController.internCreate);
 //List students applied internship
-router.get("/functionup/collegeDetails", internsController.giveAllInterns)
+router.get("/functionup/collegeDetails", internsController.getInterns)
 
 module.exports = router;
